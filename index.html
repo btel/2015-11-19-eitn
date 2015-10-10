@@ -2,7 +2,7 @@
 layout: workshop
 root: .
 venue: European Institute for Theoretical Neuroscience # brief name of host site without address (e.g., "Euphoric State University")
-address: 74 Rue du Faubourg Saint-Antoine, 75012 Paris   # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: EITN, 74 Rue du Faubourg Saint-Antoine, 75012 Paris   # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: fr    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: en # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: 48.851667,2.374022   # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
@@ -11,8 +11,8 @@ humantime: 9:30 - 17:30  # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2015-11-19  # use YYYY-MM-DD format like "2015-01-01"
 enddate: 2015-11-20    # use YYYY-MM-DD format like" 2015-01-02"
 instructor: ["Andrew Davison", "Konrad Hinsen", "Bartosz Telenczuk"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: telenczuk@unic.cnrs-gif.fr    # contact email address for workshop organizer, such as "grace@hopper.org"
+helper: [] # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: telenczuk@unic.cnrs-gif.fr  # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
@@ -80,6 +80,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   The course is aimed at graduate students and other researchers.
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong>
+   For the reason of limited space we will accept maximum 2 participants from a single institution. If there are more than 2 motivated applicants, we will put them on the waiting list.
 </p>
 
 <!--
@@ -125,11 +126,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <strong>Contact</strong>:
   Please mail
   {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+    <a href='mailto:{{page.contact}}?cc=eitn@unic.cnrs-gif.fr'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+  for more information (also put <a href='mailto:{{page.contact}}?cc=eitn@unic.cnrs-gif.fr'>eitn@unic.cnrs-gif.fr</a> in CC).
 </p>
 
 <hr/>
