@@ -98,7 +98,7 @@ CHECKS = [
     'sympy',
     'Cython',
     'networkx',
-    'mayavi.mlab',
+#    'mayavi.mlab',
     ]
 
 CHECKER = {}
